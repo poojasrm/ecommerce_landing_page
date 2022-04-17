@@ -1,0 +1,306 @@
+ 
+ .search-wrapper{
+    padding:10px;
+    margin:10px auto;
+    display: flex;
+ }
+.search-wrapper input
+{
+    width:90%;height: 40px;
+    border:1px solid rgb(80, 76, 76);
+}
+.search-wrapper .search-icon
+{
+    float:right;
+    width:10%;
+    background-color:#3970a1;;
+    color:white; 
+    font-size:20px;
+    text-align: center;    
+    height: 40px;
+    border:1px solid rgb(80, 76, 76);
+}
+
+.my-container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.feature-card{
+    width: 24.4%;   
+    display: flex; 
+    margin-right:11px;    
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+.feature-card h5{margin-top: 15px;}
+.icon-div{
+    padding:2px 10px;
+    border:1px solid black; 
+    border-radius: 80%;
+}
+  
+.navigation {
+     height: 65px;
+     padding: 10px;
+     border-bottom: 1px solid black;     
+}
+ .brand {
+     position: absolute;
+     padding-left: 20px;
+     float: left;         
+}
+.nav-container {
+     max-width: 100%;
+     margin: 0 auto;
+}
+.user-dropdown {
+    float:right;
+    line-height: 50px;
+}
+ nav {
+     float: right;
+}
+ nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ nav ul li {
+     float: left;
+     position: relative;
+}
+ nav ul li a {
+     display: block;
+     padding: 0 20px;
+     line-height: 55px;
+     color: #6c757d;     
+     text-decoration: none;
+}
+ nav ul li a{
+     background: transparent;
+     color: #6c757d;
+}
+ nav ul li a:hover {     
+     color: #0c0a0a;
+}
+#navbar-toggle {
+    position: absolute;
+    left: 18px;
+    top: 15px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+#navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 30px;
+    background: #050505;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+#navbar-toggle span:before {
+    top: -10px;
+}
+#navbar-toggle span:after {
+    bottom: -10px;
+}
+#navbar-toggle.active span {
+    background-color: transparent;
+}
+#navbar-toggle.active span:before, #navbar-toggle.active span:after {
+    top: 0;
+}
+#navbar-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#navbar-toggle.active span:after {
+    transform: rotate(-45deg);
+}   
+
+.category-btn{
+    background-color: white;
+    padding: 7px 25px;
+    border: 1px solid #00000038;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.category-btn:hover{
+    background-color: #3970a1;
+    color:cornsilk;
+}
+.category-btn-active{
+    background-color: #3970a1;
+    color:cornsilk;
+}
+.category-card{
+    border: 1px solid #00000038;
+    position:relative;height: 347px;width: 100%;
+}
+.text-band{
+    position: absolute;
+    bottom: 20px;
+    width:90%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    margin-left:20px;
+                
+}
+.text-band h2{
+    margin-top: 5px;
+}
+.category-container{
+    width:25%;padding: 10px;
+}
+.center-text{
+    width:50%;margin-right: auto;margin-left: auto;
+}
+.product-card{
+    width: 25%;
+    padding: 5px;
+}
+.product-btn{
+    padding: 6px 12px;    
+    border-radius: 5px;    
+}
+.share-btn{
+    border-top-right-radius:0px;border-bottom-right-radius:0px; background-color: white;border:1px solid #6c757d;
+}
+.price-btn{
+    border-top-left-radius:0px;border-bottom-left-radius:0px;color:white;background-color: #0d6efd;border:1px solid #0d6efd;
+}
+.buy-btn{
+    color:white;background-color: #198754;border: 1px solid #198754;
+}
+.buy-btn:hover{
+    background-color: #14633e;
+    border-color: #14633e;
+}
+.share-btn:hover{
+    background-color: #6c757d;
+    color: white;
+}
+.price-btn:hover{
+    background-color: #0e52b8;
+    border-color: #0e52b8;
+}
+/* Mobile navigation */
+ .nav-mobile {
+     display: none;
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: transparent;
+     height: 55px;
+     width: 70px;
+}
+ @media only screen and (max-width: 800px) {
+    .nav-mobile {
+         display: block;
+    }
+     nav {
+         width: 100%;         
+    }
+    .nav-list{padding-top:20px;}
+     nav ul {
+         display: none;
+    }
+    
+    
+     nav ul li {
+         float: none;
+    }
+     nav ul li a {
+         padding: 15px;
+         line-height: 20px;         
+    }    
+
+    .user-dropdown {
+        float:right;
+        line-height: 50px;
+        margin-right: 60px;
+        line-height: 35px;        
+    }
+    .search-wrapper input
+    {
+        width:85%;height: 40px;
+        border:1px solid rgb(80, 76, 76);
+    }
+
+    .search-wrapper .search-icon
+    {
+        float:right;
+        width:15%;
+        background-color:#3970a1;;
+        color:white; 
+        font-size:20px;
+        text-align: center;    
+        height: 40px;
+        border:1px solid rgb(80, 76, 76);
+    }
+    .search-icon span{display: none;}
+    .feature-card{
+
+        width: 100%;
+        margin-bottom:10px;   
+        margin-right: 0px;
+        padding: 6px;     
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0.25rem;
+    }
+    .category-btn{
+        
+        padding: 7px 10px;
+        border-radius: 5px;
+        margin-right:2px;
+        font-size: 15px;
+    }
+    .center-text{
+        width:95%;margin-right: auto;margin-left: auto;
+    }
+    .category-container{
+        width:100%;
+    }
+    .product-card{
+        width: 100%;
+        padding: 5px;
+    }
+}
+ @media screen and (min-width:800px) {
+     .nav-list {
+         display: block !important;
+    }
+}
+
+/* For IPads */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .feature-card{
+
+        width: 50%;
+        margin-bottom:10px;   
+        margin-right: 0px;
+        padding: 6px;     
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0.25rem;
+    }
+    .category-container{
+        width:50%;
+    }
+    .product-card{
+        width: 50%;     
+    }
+    .center-text{
+        width:95%;margin-right: auto;margin-left: auto;
+    }
+}
+
+
+
